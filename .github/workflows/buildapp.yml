@@ -118,7 +118,7 @@ jobs:
       - name: Prepare YouTube iPA
         id: prepare_youtube
         run: |
-          wget "$YOUTUBE_URL" --no-verbose -O main/YouTube.ipa
+          wget "https://download938.mediafire.com/v9xwytospvjgZun6NIti09WbAY9vNurtpLSHS9yc_hWEuOg6npGSbDqCdBYdwgC7MPH2sNIe3tZty_O-axNCj2o1821xZ9QwEKjUyL4Q8CRMlfmhVb8m6-W5lkE-djLZ-31m-abUDdUP1B4RxRWnI4SWtb8cXhXuJ-VykPFNK8Ip/gqp57pfp0l4c1mc/com.google.ios.youtube_20.31.5_und3fined.ipa" --no-verbose -O main/YouTube.ipa
           cd ${{ github.workspace }}/main
           mv YouTube.ipa YouTube.zip
           unzip -q YouTube.zip
